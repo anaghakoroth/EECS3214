@@ -3,7 +3,7 @@ package A01;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Main {
+public class 218819516 {
 	public static class HTTPRequestMsg {
 		public String method;
 		public String url;
