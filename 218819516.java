@@ -26,8 +26,8 @@ public class 218819516 {
 		public int numOfAuthorityRRs;
 		public int numOfAdditionalRRs;
 		
-		public String queryName;
-		public int queryType;
+		public String queryNameField;
+		public int queryTypeField;
 		
 		public Map<String, String> answerRecords = new HashMap<>();
 		public Map<String, String> authorityRecords = new HashMap<>();
