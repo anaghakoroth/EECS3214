@@ -1,37 +1,35 @@
-package A01;
-
-import java.util.HashMap;
 import java.util.Map;
+import java.util.HashMap;
 
 public class 218819516 {
 	public static class HTTPRequestMsg {
 		public String method;
 		public String url;
 		public String version;
-		public Map<String, String> headers = new HashMap<>();
+		public Map<String, String> headerFieldNames = new HashMap<>();
 		public String entityBody;
 	}
 	
 	public static class HTTPResponseMsg {
 		public String version;
 		public int statusCode;
-		public String statusMsg;
-		public Map<String, String> headers = new HashMap<>();
+		public String phrase;
+		public Map<String, String> headerFieldNames = new HashMap<>();
 		public String entityBody;
 	}
 	
 	public static class DNSMsg {
 		public int id;
 		public int flags;
-		public int numOfQues;
-		public int numOfAnsRRs;
+		public int numOfQuestions;
+		public int numOfAnswerRRs;
 		public int numOfAuthorityRRs;
 		public int numOfAdditionalRRs;
 		
 		public String queryName;
 		public int queryType;
 		
-		public Map<String, String> ansRecords = new HashMap<>();
+		public Map<String, String> answerRecords = new HashMap<>();
 		public Map<String, String> authorityRecords = new HashMap<>();
 		public Map<String, String> additionalRecords = new HashMap<>();
 	}
